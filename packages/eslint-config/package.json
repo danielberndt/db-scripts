@@ -16,6 +16,9 @@
     "javascript",
     "styleguide"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/danielberndt/db-scripts.git"
