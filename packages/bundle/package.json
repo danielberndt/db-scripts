@@ -1,0 +1,58 @@
+{
+  "name": "@db-scripts/bundle",
+  "version": "0.0.0",
+  "description": "Bundling for my OS projects",
+  "bin": {
+    "db-scripts-bundle": "src/build.js"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {},
+  "author": "Daniel Berndt <daniel.berndt@gmail.com>",
+  "keywords": [
+    "rollup",
+    "bundle",
+    "config",
+    "babel"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@db-scripts/eslint-config": "*",
+    "eslint": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielberndt/db-scripts.git"
+  },
+  "homepage": "https://github.com/danielberndt/db-scripts/tree/packages/bundle",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-minify-dead-code-elimination": "^0.5.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.19",
+    "concurrently": "^4.0.1",
+    "cross-spawn": "^6.0.5",
+    "glob": "^7.1.3",
+    "inflected": "^2.0.4",
+    "read-pkg-up": "^4.0.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-size-snapshot": "^0.7.0",
+    "rollup-plugin-terser": "^3.0.0",
+    "which": "^1.3.1",
+    "yargs-parser": "^11.0.0"
+  }
+}

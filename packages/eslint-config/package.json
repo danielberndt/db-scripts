@@ -25,9 +25,6 @@
   },
   "homepage": "https://github.com/danielberndt/db-scripts/tree/packages/eslint-config",
   "license": "ISC",
-  "peerDependencies": {
-    "eslint": "^5.7.0"
-  },
   "dependencies": {
     "babel-eslint": "^9.0.0",
     "eslint-config-react-app": "^3.0.4",
@@ -35,5 +32,11 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1"
+  },
+  "peerDependencies": {
+    "eslint": "^5.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0"
   }
 }
