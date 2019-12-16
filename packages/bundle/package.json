@@ -1,6 +1,6 @@
 {
   "name": "@db-scripts/bundle",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Bundling for my OS projects",
   "bin": {
     "db-scripts-bundle": "src/build.js"
@@ -37,8 +37,8 @@
     "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/preset-env": "^7.7.6",
     "@babel/preset-react": "^7.7.4",
-    "@rollup/plugin-replace": "2.2.1",
     "@rollup/plugin-node-resolve": "6.0.0",
+    "@rollup/plugin-replace": "2.2.1",
     "babel-plugin-minify-dead-code-elimination": "^0.5.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "concurrently": "^5.0.1",
