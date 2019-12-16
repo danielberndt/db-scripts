@@ -27,7 +27,7 @@
     "type": "git",
     "url": "https://github.com/danielberndt/db-scripts.git"
   },
-  "homepage": "https://github.com/danielberndt/db-scripts/tree/packages/bundle",
+  "homepage": "https://github.com/danielberndt/db-scripts/tree/master/packages/bundle",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.7.5",
