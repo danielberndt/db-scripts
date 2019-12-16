@@ -9,13 +9,6 @@ module.exports = {
     "max-nested-callbacks": ["warn", 7],
     "max-params": ["warn", 7],
     "no-console": "warn",
-    "react/no-unused-state": "warn",
     "import/no-cycle": "warn",
-    "import/order": [
-      "warn",
-      {
-        groups: ["builtin", ["external", "internal"], "parent", ["sibling", "index"]],
-      },
-    ],
   },
 };

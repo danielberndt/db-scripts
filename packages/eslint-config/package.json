@@ -26,17 +26,19 @@
   "homepage": "https://github.com/danielberndt/db-scripts/tree/packages/eslint-config",
   "license": "ISC",
   "dependencies": {
-    "babel-eslint": "^9.0.0",
-    "eslint-config-react-app": "^3.0.4",
-    "eslint-plugin-flowtype": "^2.50.3",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "@typescript-eslint/eslint-plugin": "2.11.0",
+    "@typescript-eslint/parser": "2.11.0",
+    "babel-eslint": "10.0.3",
+    "eslint-plugin-flowtype": "4.5.2",
+    "eslint-plugin-import": "2.19.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.17.0",
+    "eslint-plugin-react-hooks": "2.3.0"
   },
   "peerDependencies": {
-    "eslint": "^5.7.0"
+    "eslint": "6.x"
   },
   "devDependencies": {
-    "eslint": "^5.7.0"
+    "eslint": "6.7.2"
   }
 }

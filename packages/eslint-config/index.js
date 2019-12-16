@@ -1,8 +1,5 @@
 module.exports = {
   extends: [require.resolve("eslint-config-react-app")],
-  globals: {
-    __DEV__: true,
-  },
   rules: {
     "import/no-duplicates": "warn",
     "import/no-unresolved": "error",

@@ -18,7 +18,9 @@ Add this to your `package.json`
 }
 ```
 
-This will create an ES Module build, a commonjs build, a umd build and an esnext build within a dist folder.
+This will create an ES Module build, a commonjs build, a umd build and an esnext build within a `dist` folder.
+
+It also will also add a `.size-snapshot.json` which will tell you the size of your library including all required dependencies.
 
 Typically you want to add these fields to your `package.json`
 
