@@ -3,7 +3,7 @@ import glob from "glob";
 import nodeResolve from "rollup-plugin-node-resolve";
 import babel from "rollup-plugin-babel";
 import commonjs from "rollup-plugin-commonjs";
-import replace from "rollup-plugin-replace";
+import replace from "@rollup/plugin-replace";
 import {terser} from "rollup-plugin-terser";
 import {sizeSnapshot} from "rollup-plugin-size-snapshot";
 import {camelize} from "inflected";
@@ -71,7 +71,7 @@ export default {
   input: input[0],
   output,
   plugins: [
-    nodeResolve({jsnext: true, main: true}),
+    nodeResolve(),
     commonjs({include: "node_modules/**"}),
     babel({
       exclude: "node_modules/**", // only transpile our source code,
