@@ -1,6 +1,6 @@
 {
   "name": "@db-scripts/bundle",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "Bundling for my OS projects",
   "bin": {
     "db-scripts-bundle": "src/build.js"
@@ -20,7 +20,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@db-scripts/eslint-config": "^0.2.3",
+    "@db-scripts/eslint-config": "^0.3.0",
     "eslint": "^6.7.2"
   },
   "repository": {
