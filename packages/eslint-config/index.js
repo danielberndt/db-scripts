@@ -6,12 +6,5 @@ module.exports = {
     "import/namespace": "error",
     "import/no-extraneous-dependencies": "error",
     "no-shadow": "warn",
-    "no-unused-vars": [
-      "warn",
-      {
-        varsIgnorePattern: "^_",
-        argsIgnorePattern: "^_",
-      },
-    ],
   },
 };
