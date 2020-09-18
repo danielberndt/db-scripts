@@ -8,8 +8,8 @@ const spawn = require("cross-spawn");
 const rimraf = require("rimraf");
 const {fromRoot} = require("./utils");
 
-const here = p => path.join(__dirname, p);
-const hereRelative = p => here(p).replace(process.cwd(), ".");
+const here = (p) => path.join(__dirname, p);
+const hereRelative = (p) => here(p).replace(process.cwd(), ".");
 const parsedArgs = yargsParser(process.argv.slice(2));
 
 const resolveBin = (modName, {executable = modName, cwd = process.cwd()} = {}) => {

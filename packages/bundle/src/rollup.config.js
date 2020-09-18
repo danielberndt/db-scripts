@@ -1,15 +1,15 @@
 import path from "path";
 import glob from "glob";
 import nodeResolve from "@rollup/plugin-node-resolve";
-import babel from "rollup-plugin-babel";
-import commonjs from "rollup-plugin-commonjs";
+import commonjs from "@rollup/plugin-commonjs";
+import babel from "@rollup/plugin-babel";
 import replace from "@rollup/plugin-replace";
 import {terser} from "rollup-plugin-terser";
 import {sizeSnapshot} from "rollup-plugin-size-snapshot";
 import {camelize} from "inflected";
 const {pkg, fromRoot} = require("./utils");
 
-const here = p => path.join(__dirname, p);
+const here = (p) => path.join(__dirname, p);
 
 const format = process.env.BUILD_FORMAT;
 const useSizeSnapshot = process.env.BUILD_SIZE_SNAPSHOT || false;
@@ -28,7 +28,7 @@ const peerDeps = Object.keys(pkg.peerDependencies || {});
 const external = umd ? peerDeps : deps.concat(peerDeps);
 
 const externalPattern = new RegExp(`^(${external.join("|")})($|/)`);
-const externalPredicate = external.length === 0 ? () => false : id => externalPattern.test(id);
+const externalPredicate = external.length === 0 ? () => false : (id) => externalPattern.test(id);
 
 const filename = [pkg.name, `.${format}`, minify ? ".min" : null, ".js"].filter(Boolean).join("");
 

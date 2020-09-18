@@ -10,7 +10,7 @@ module.exports = ({pure, withModules}) => ({
               modules: withModules,
               loose: true,
               targets: {
-                browsers: ["ie 10", "ios 7"],
+                browsers: [">0.2%", "not dead", "not op_mini all"],
               },
             },
           ],
@@ -24,7 +24,6 @@ module.exports = ({pure, withModules}) => ({
         ignoreFilenames: ["node_modules"],
       },
     ],
-    ["@babel/plugin-proposal-object-rest-spread", {loose: true}],
     ["@babel/proposal-class-properties", {loose: true}],
     "@babel/transform-runtime",
     "minify-dead-code-elimination",
