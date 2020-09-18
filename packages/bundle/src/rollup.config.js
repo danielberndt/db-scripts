@@ -75,7 +75,7 @@ export default {
     commonjs({include: "node_modules/**"}),
     babel({
       exclude: "node_modules/**", // only transpile our source code,
-      runtimeHelpers: true,
+      babelHelpers: "runtime",
       presets: [here("babelrc.esm.js")],
     }),
     replace(replacements),
