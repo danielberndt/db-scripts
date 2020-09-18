@@ -1,6 +1,6 @@
 {
   "name": "@db-scripts/bundle",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Bundling for my OS projects",
   "bin": {
     "db-scripts-bundle": "src/build.js"
